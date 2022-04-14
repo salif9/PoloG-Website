@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  styling navbar      */
+.NavigationBar{
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    color: #f2f3eb;
+   position: fixed;
+   width: 100%;
+   height: 3.5em;
+   align-items: center;
+}
+
+img{
+
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/* style the div linked to NavigationBar*/
+.TopNavBar ul {
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+/* style TopNavBar and lists*/
+.TopNavBar li{
+ list-style: none;
+}
+/* style TopNavBar,lists and anchor tag*/
+.TopNavBar li a{
+text-decoration: none;
+padding: 3rem;
+color: #ee0b0b;
+display: block;
+text-align: center;
+
+
+
+}
+
+
+
+
+.TopNavBar li:hover {
+    background-color: rgb(248, 248, 117);
+    height: 5em;
+    color: #000;
+    
+}
+
+
+/* style toggle bottom*/
+.buttonTG{
+position: absolute;
+display: none;   /*  test*/
+flex-direction: column;
+width: 30px;
+height: 21px;
+top: 0.75em;
+right: 1rem;
+justify-content: space-between;
+
+}
+
+.buttonTG .spanclass{
+ width: 100%;   
+height: 3px;
+border-radius: 10px;
+background-color: #f2f3eb;
+}
+
+
+/* the below media queries defines the style when the screen is less than 650*/
+@media(max-width: 650px){ /*  end of media*/
+.buttonTG{
+    display: flex;
+}
+
+.TopNavBar{
+
+    display: none;   /* */
+    width: 100%;
+}
+
+.NavigationBar{
+flex-direction: column;
+align-items: flex-start;
+}
+
+.TopNavBar ul {
+ width: 100%;
+ flex-direction: column;
+}
+.TopNavBar li{
+text-align: center;
+}
+
+.TopNavBar li a {
+ padding: 0.5em 1rem;
+}
+
+.TopNavBar.active{
+
+    display: flex;
+}
+
+#PologNameTop a {
+    position: relative;
+    font-size: 1em;
+    color:rgb(72, 255, 0);
+    margin: 25rem;
+    text-decoration: none;
+    top: -8em;
+    font-size: x-large;
+   
+    }
+
+    
+
+    
+
+    
+
+
+} /** end of media queries*/
+
+
+
+
+/** POLO_G left side*/
+#PologNameTop a {
+    position: relative;
+    font-size: 1em;
+    color:red;
+    margin: 25rem;
+    text-decoration: none;
+    top: -1.9em;
+    font-size: x-large;
+   
+    }
+
+
+   
+
+.backg {
+    /**background styling;*/
+    overflow: hidden;
+    overflow-y: scroll;
+    background-image: linear-gradient(rgb(225, 235, 235), rgb(29, 29, 26), rgb(39, 39, 54));
+    width: 100%;
+    height: 0%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.ba {
+    position: relative;
+
+    left: -5em;
+    top: -1em;
+    width: 100em;
+
+    
+    z-index: -1;
+
+}
+
+#HRundrpolo {
+    position: relative;
+    border-style: dotted;
+    ;
+    height: 0;
+    top: -7em;
+    border: 1px solid rgb(8, 8, 8);
+    width: 100%;
+}
+
+
+/* homepage         */
+
+#homep {
+    position: relative;
+    top: 5em;
+    left: 30rem;
+    z-index: -1;
+    width: 0%;
+    align-items: center;
+}
+ 
+#pologD1{
+position: relative;
+top: -40em;
+left: 42em;
+}
+
+
+#pologD2{
+position: relative;
+top: -43em;
+left: 40em;
+}
+
+
+
+
+
+
+/*   section relative to Bio     */
+
+#BioSection {
+    position: relative;
+    background-color: rgb(155, 154, 151);
+    z-index: -1;
+}
+
+
+/*   title of the bio "Biograph"     */
+
+#bioTitle {
+    position: relative;
+    top: -1em;
+    color: rgb(255, 8, 0);
+    font-style: normal;
+    font-size: x-large;
+}
+
+
+/*  the bio paragraph   */
+
+#poloBioParagraph {
+    position: relative;
+    right: 0;
+    left: 45em;
+    top: -29em;
+}
+
+
+/*   image inside Bio     */
+
+#BioImage {
+    position: relative;
+    right: 0;
+    left: 6em;
+    top: -4em;
+}
+
+
+/*   singnin page    */
+
+#SigninPage {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(155, 154, 151);  */
+    font-family: 'Arial';
+    background-position: center;
+    background-image: linear-gradient(rgb(225, 235, 235), rgb(29, 29, 26), rgb(39, 39, 54));
+}
+
+#login {
+    width: 310px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 29px;
+    background: #f8f8f6;
+    border-radius: 15px;
+}
+
+#LoginPage {
+    /*   title of the form in signin    */
+    text-align: center;
+    color: rgb(248, 244, 244);
+    font-size: xx-large;
+}
+
+
+/* pages titles     */
+
+.H1S {
+    position: relative;
+    width: 15em;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: rgb(228, 17, 17);
+    top: 0.5em;
+}
+
+
+/*    upcoming tour    */
+
+#uptour {
+    position: fixed;
+    color: rgb(207, 139, 11);
+    left: 38em;
+    top: 4em;
+    font-size: x-large;
+}
+
+
+/*    BuyTicket Buttom    */
+
+.ticketB:link,
+.ticketB:visited {
+    background-color: #030303;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+    width: 85px;
+    height: 55px;
+    font-size: large;
+}
+
+
+/*   end of the form in signin    */
+
+#tableTour {
+    /*   Style table  table    */
+    font-style: arial;
+    width: 100%;
+    position: absolute;
+    top: 3em;
+    left: -4.1em;
+}
+
+#tableTour td,
+#tableTour th {
+    /*   Style table header and table data    */
+    border: 1px rgb(207, 139, 11);
+    padding: 8px;
+}
+
+#tableTour tr:nth-child(even) {
+    background-color: rgb(241, 200, 110)
+}
+
+#tableTour tr:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+#tableTour th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+}
+
+div.gallery {
+    margin: 5px;
+    border: dotted rgb(204, 192, 192);
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 0 solid rgb(226, 196, 24);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*   click for video in gallary  */
+
+
+    
+
+#PoloMusicc {
+    position: fixed;
+    top: 1em;
+}
+
+
+/*   album div style  inside  music   */
+
+#poloalbum {
+    position: absolute;
+    left: 50em;
+    font-style: arial;
+    font-size: large;
+    top: 10em;
+}
+
+
+/*   best div song  inside  music  */
+
+#bestsongs {
+    position: absolute;
+    left: 65em;
+    font-style: arial;
+    font-size: large;
+    top: 10em;
+}
+
+ul.albumc {
+    list-style-type: square;
+}
+
+.poloAlbumTitle:link,
+.poloAlbumTitle:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+    width: 120px;
+    height: 50px;
+}
+
+.polosongs:link,
+.polosongs:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0%;
+    width: 190px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+#videosfram {
+    position: relative;
+    left: 10em;
+}
+
+
+/*   @media query will run only then specific condition are met if the creen width is less 650 
+the below code will run */
+
+
+
+
+
+
+
+
+
+
+  
+
